@@ -30,8 +30,7 @@ public class DifferentialDecoder {
 			symbols[i] = i - 255;
 		}
 
-		FreqCountIntegerSymbolModel model = 
-				new FreqCountIntegerSymbolModel(symbols, symbol_counts);
+		FreqCountIntegerSymbolModel model = new FreqCountIntegerSymbolModel(symbols, symbol_counts);
 		
 		// Read in number of symbols encoded
 

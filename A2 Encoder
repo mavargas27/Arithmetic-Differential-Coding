@@ -10,7 +10,7 @@ import io.OutputStreamBitSink;
 
 public class DifferentialEncoding {
 	public static void main(String[] args) throws IOException {
-		String input_file_name = "C:\\Users\\sokri\\Desktop\\Downloads\\out.dat";
+		String input_file_name = "C:\\Users\\mavargas\\Desktop\\Downloads\\out.dat";
 		String output_file_name = "data/static-compressed.dat";
 
 		int range_bit_width = 40;

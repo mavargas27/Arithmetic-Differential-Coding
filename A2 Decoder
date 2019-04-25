@@ -75,7 +75,7 @@ public class DifferentialDecoder {
 		InputStreamBitSource bit_source2 = new InputStreamBitSource(fis2);
 		int numSymbols2 = (int) new File(output_file_name).length();
 		
-		String original_file = "C:\\Users\\sokri\\Desktop\\Downloads\\out.dat";
+		String original_file = "C:\\Users\\mavargas\\Desktop\\Downloads\\out.dat";
 		FileInputStream fis3 = new FileInputStream(original_file);
 		InputStreamBitSource bit_source3 = new InputStreamBitSource(fis3);
 		int numSymbols3 = (int) new File(original_file).length();

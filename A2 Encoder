@@ -34,9 +34,6 @@ public class DifferentialEncoding {
 		int old_byte = next_byte;
 		int counter = 0;
 		while (next_byte != -1) {
-//			if (counter < 5) {
-//				System.out.println(next_byte);
-//			}
 			symbol_counts[encoding_byte + 255]++;
 			next_byte = fis.read();
 			encoding_byte = old_byte - next_byte;
@@ -80,9 +77,6 @@ public class DifferentialEncoding {
 			} else {
 				enocdingSym = prevSym - next_symbol;
 			}
-//			if (i < 5) {
-//				System.out.println(enocdingSym);
-//			}
 			encoder.encode(enocdingSym, model, bit_sink);
 			prevSym = next_symbol;
 		}

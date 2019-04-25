@@ -28,7 +28,6 @@ public class DifferentialEncoding {
 		int[] symbol_counts = new int[511];
 
 		int next_byte = fis.read();
-		//symbol_counts[next_byte + 255]++;
 		
 		int encoding_byte = next_byte;
 		int old_byte = next_byte;

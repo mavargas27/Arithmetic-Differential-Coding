@@ -63,9 +63,6 @@ public class DifferentialDecoder {
 				int encodingSym = prevSym - sym;
 				fos.write(encodingSym);
 				prevSym = encodingSym;
-//				if (i < 5) {
-//					System.out.println(encodingSym);
-//				}
 			}
 			
 		}
@@ -83,15 +80,6 @@ public class DifferentialDecoder {
 		FileInputStream fis3 = new FileInputStream(original_file);
 		InputStreamBitSource bit_source3 = new InputStreamBitSource(fis3);
 		int numSymbols3 = (int) new File(original_file).length();
-		
-//		System.out.println("decoded length: " + numSymbols2 + " originial length " + numSymbols3);
-//		boolean same = true;
-//		for (int i = 0; i < numSymbols2; i ++) {
-//			if (!(bit_source2.next(8) == bit_source3.next(8))) {
-//				same = false;
-//			}
-//		}
-//		System.out.println(same);
 	}
 	
 }

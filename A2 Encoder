@@ -43,8 +43,8 @@ public class DifferentialEncoding {
 		fis.close();
 		
 		Integer[] symbols = new Integer[511];
-		for (int i=-255; i<256; i++) {
-			symbols[i+255] = i;
+		for (int i = -255; i < 256; i++) {
+			symbols[i + 255] = i;
 		}
 
 		// Create new model with analyzed frequency counts
@@ -56,7 +56,7 @@ public class DifferentialEncoding {
 		OutputStreamBitSink bit_sink = new OutputStreamBitSink(fos);
 
 		// First 256 * 4 bytes are the frequency counts 
-		for (int i=0; i<511; i++) {
+		for (int i = 0; i < 511; i++) {
 			bit_sink.write(symbol_counts[i], 32);
 		}
 
@@ -69,7 +69,7 @@ public class DifferentialEncoding {
 		// Now encode the input
 		fis = new FileInputStream(input_file_name);
 		int prevSym = 0;
-		for (int i=0; i<num_symbols; i++) {
+		for (int i = 0; i < num_symbols; i++) {
 			int next_symbol = fis.read();
 			int enocdingSym;
 			if (i == 0) {
